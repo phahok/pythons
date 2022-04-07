@@ -3,9 +3,9 @@ from pytube.cli import on_progress
 
 import os
 
-print("##YOUTUBE DOWNLOADS ##\n\nBaixe e converta videos Youtube \nBy José Renato Ferreira\n\n")
+print("##YOUTUBE DOWNLOADS ##\n\nBaixe audios de videos Youtube \nBy José Renato Ferreira\n\n")
 
-link = input("Insira o link: ")
+link = input("Insira o link do video: ")
 
 yt = YouTube(link, on_progress_callback = on_progress)
 
