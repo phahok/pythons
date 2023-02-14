@@ -17,16 +17,17 @@ lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
 
 contador = 0
 
-while (contador < 15):
+while (contador < 20):
     random.shuffle(lista)
     par_es = list(filter(lambda x: (x % 2 == 0), lista))
     impar_es = list(filter(lambda x: (x%2 != 0) , lista)) 
     #print("Pares: ", par_es[0:8]) 
-    par = sorted(par_es[0:7])
+    par = sorted(par_es[0:6])
     #print("Impar: ", impar_es[0:7])
-    impar = sorted(impar_es[0:8])
+    impar = sorted(impar_es[0:9])
+
     #print("Jogo Completo :" , sorted(lista[0:15])) #gerar 01 jogo aleatorio 15 nros
-    file = open('arq_jogos.txt', 'a')
+    file = open('arq_jogos_9Impar_6Pares.txt', 'a')
     unir = sorted(par+impar)
     file.write('%s\n' % unir)
     
